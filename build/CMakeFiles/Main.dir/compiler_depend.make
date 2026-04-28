@@ -7,6 +7,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/interval.h \
+  /home/ckemper/Documents/Projects/CPU-raytracer/material.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h \
@@ -404,15 +405,9 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/flt-eval-method.h:
 
-/usr/include/c++/15.2.1/bits/move.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/floatn-common.h:
+/usr/include/bits/timex.h:
 
 /usr/include/bits/errno.h:
-
-/usr/include/bits/timex.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -443,8 +438,6 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/tr1/beta_function.tcc:
 
 /usr/include/bits/byteswap.h:
-
-/usr/include/c++/15.2.1/tr1/special_function_util.h:
 
 /usr/include/bits/time64.h:
 
@@ -556,7 +549,15 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/basic_ios.h:
 
+/usr/include/bits/floatn-common.h:
+
 /usr/include/bits/floatn.h:
+
+/usr/include/c++/15.2.1/tr1/special_function_util.h:
+
+/home/ckemper/Documents/Projects/CPU-raytracer/material.h:
+
+/usr/include/bits/types/time_t.h:
 
 /usr/include/bits/long-double.h:
 
@@ -580,8 +581,6 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/select.h:
 
-/usr/include/bits/types/time_t.h:
-
 /usr/include/c++/15.2.1/bits/charconv.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
@@ -597,6 +596,10 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/debug/debug.h:
 
 /usr/include/c++/15.2.1/type_traits:
+
+/usr/include/bits/types.h:
+
+/usr/include/c++/15.2.1/bits/move.h:
 
 /usr/include/c++/15.2.1/bits/nested_exception.h:
 

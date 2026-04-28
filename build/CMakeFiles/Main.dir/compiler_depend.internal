@@ -8,6 +8,7 @@ CMakeFiles/Main.dir/Main.cpp.o
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h
  /home/ckemper/Documents/Projects/CPU-raytracer/interval.h
+ /home/ckemper/Documents/Projects/CPU-raytracer/material.h
  /home/ckemper/Documents/Projects/CPU-raytracer/ray.h
  /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h
  /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h
