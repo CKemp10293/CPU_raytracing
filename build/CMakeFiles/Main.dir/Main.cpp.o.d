@@ -1,7 +1,7 @@
 CMakeFiles/Main.dir/Main.cpp.o: \
  /home/ckemper/Documents/Projects/CPU-raytracer/Main.cpp \
  /usr/include/stdc-predef.h \
- /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h \
  /usr/include/c++/15.2.1/cmath \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -165,6 +165,29 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc \
+ /usr/include/c++/15.2.1/bits/istream.tcc /usr/include/c++/15.2.1/memory \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.2.1/bits/align.h \
+ /usr/include/c++/15.2.1/bits/unique_ptr.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/15.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/15.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/15.2.1/ext/concurrence.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15.2.1/bits/atomic_base.h \
+ /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/15.2.1/backward/auto_ptr.h \
+ /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/colour.h \
- /home/ckemper/Documents/Projects/CPU-raytracer/ray.h
+ /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h \
+ /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
+ /usr/include/c++/15.2.1/bits/stl_bvector.h \
+ /usr/include/c++/15.2.1/bits/vector.tcc \
+ /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h
