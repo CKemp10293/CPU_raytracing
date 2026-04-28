@@ -166,4 +166,5 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
  /usr/include/c++/15.2.1/bits/istream.tcc \
- /home/ckemper/Documents/Projects/CPU-raytracer/colour.h
+ /home/ckemper/Documents/Projects/CPU-raytracer/colour.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/ray.h
