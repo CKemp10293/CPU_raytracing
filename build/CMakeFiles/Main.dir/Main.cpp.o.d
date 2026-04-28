@@ -185,6 +185,8 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /home/ckemper/Documents/Projects/CPU-raytracer/colour.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/interval.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/camera.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h \
  /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
