@@ -188,6 +188,7 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/camera.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/material.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h \
  /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
  /usr/include/c++/15.2.1/bits/stl_bvector.h \
