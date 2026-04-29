@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

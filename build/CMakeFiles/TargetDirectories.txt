@@ -1,0 +1,4 @@
+/home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles/imgui.dir
+/home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles/Main.dir
+/home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles/edit_cache.dir
+/home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles/rebuild_cache.dir
