@@ -20,6 +20,13 @@ class hittable_list : public hittable {
             objects.push_back(object);
         }
 
+        aabb bounding_box() const override {
+            aabb result;
+            for (const auto& obj : objects)
+                result = aabb::merge(result, obj->bounding_box());
+            return result;
+        }
+
         bool hit(const ray& r,interval ray_t,hit_record& rec) const override {
         hit_record temp_rec;
         bool hit_anything = false;

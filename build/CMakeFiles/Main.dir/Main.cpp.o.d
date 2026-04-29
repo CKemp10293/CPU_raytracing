@@ -43,7 +43,8 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/15.2.1/bits/specfun.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/15.2.1/bits/specfun.h \
  /usr/include/c++/15.2.1/bits/stl_algobase.h \
  /usr/include/c++/15.2.1/bits/functexcept.h \
  /usr/include/c++/15.2.1/bits/exception_defines.h \
@@ -138,11 +139,11 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /usr/include/bits/types/__fpos64_t.h \
  /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/15.2.1/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/stdio.h \
+ /usr/include/c++/15.2.1/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/15.2.1/bits/charconv.h \
  /usr/include/c++/15.2.1/bits/basic_string.tcc \
  /usr/include/c++/15.2.1/bits/memory_resource.h \
@@ -182,15 +183,54 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /usr/include/c++/15.2.1/backward/auto_ptr.h \
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/15.2.1/pstl/execution_defs.h \
+ /usr/include/c++/15.2.1/random /usr/include/c++/15.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/15.2.1/bits/random.h \
+ /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
+ /usr/include/c++/15.2.1/bits/stl_bvector.h \
+ /usr/include/c++/15.2.1/bits/vector.tcc \
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
+ /usr/include/c++/15.2.1/stdlib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h \
+ /usr/include/c++/15.2.1/bits/random.tcc /usr/include/c++/15.2.1/numeric \
+ /usr/include/c++/15.2.1/bits/stl_numeric.h \
+ /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/colour.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/interval.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
- /home/ckemper/Documents/Projects/CPU-raytracer/camera.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/bvh.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/aabb.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
- /home/ckemper/Documents/Projects/CPU-raytracer/material.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h \
- /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
- /usr/include/c++/15.2.1/bits/stl_bvector.h \
- /usr/include/c++/15.2.1/bits/vector.tcc \
- /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/camera.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/display.h \
+ /usr/include/epoxy/gl.h /usr/include/epoxy/common.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h \
+ /usr/include/epoxy/gl_generated.h /usr/include/inttypes.h \
+ /usr/include/GLFW/glfw3.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/material.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/camera_state.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/ui.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/imgui.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/imconfig.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/backends/imgui_impl_glfw.h \
+ /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/backends/imgui_impl_opengl3.h \
+ /usr/include/c++/15.2.1/chrono /usr/include/c++/15.2.1/bits/chrono.h \
+ /usr/include/c++/15.2.1/ratio /usr/include/c++/15.2.1/ctime \
+ /usr/include/c++/15.2.1/bits/parse_numbers.h

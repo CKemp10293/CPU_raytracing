@@ -3,9 +3,9 @@
 
 #include <cmath>
 #include <iostream>
-#include <cstdlib>
 #include <limits>
 #include <memory>
+#include <random>
 
 // c++ std usings
 
@@ -22,8 +22,9 @@ inline double degrees_to_radians(double degrees){
 }
 
 inline double random_double(){
-    // returns a random real in [0,1]
-    return std::rand() / (RAND_MAX + 1.0);
+    thread_local std::mt19937 gen(std::random_device{}());
+    thread_local std::uniform_real_distribution<double> dist(0.0, 1.0);
+    return dist(gen);
 }
 
 inline double random_double(double min,double max){

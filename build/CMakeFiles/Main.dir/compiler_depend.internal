@@ -3,8 +3,11 @@
 
 CMakeFiles/Main.dir/Main.cpp.o
  /home/ckemper/Documents/Projects/CPU-raytracer/Main.cpp
+ /home/ckemper/Documents/Projects/CPU-raytracer/aabb.h
+ /home/ckemper/Documents/Projects/CPU-raytracer/bvh.h
  /home/ckemper/Documents/Projects/CPU-raytracer/camera.h
  /home/ckemper/Documents/Projects/CPU-raytracer/colour.h
+ /home/ckemper/Documents/Projects/CPU-raytracer/display.h
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h
  /home/ckemper/Documents/Projects/CPU-raytracer/interval.h
@@ -13,6 +16,7 @@ CMakeFiles/Main.dir/Main.cpp.o
  /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h
  /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h
  /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h
+ /usr/include/GLFW/glfw3.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -53,7 +57,11 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
  /usr/include/bits/stdint-intn.h
+ /usr/include/bits/stdint-least.h
+ /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -94,9 +102,11 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/c++/15.2.1/algorithm
  /usr/include/c++/15.2.1/backward/auto_ptr.h
  /usr/include/c++/15.2.1/backward/binders.h
  /usr/include/c++/15.2.1/bit
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h
  /usr/include/c++/15.2.1/bits/align.h
  /usr/include/c++/15.2.1/bits/alloc_traits.h
  /usr/include/c++/15.2.1/bits/allocated_ptr.h
@@ -138,6 +148,8 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/bits/postypes.h
  /usr/include/c++/15.2.1/bits/predefined_ops.h
  /usr/include/c++/15.2.1/bits/ptr_traits.h
+ /usr/include/c++/15.2.1/bits/random.h
+ /usr/include/c++/15.2.1/bits/random.tcc
  /usr/include/c++/15.2.1/bits/range_access.h
  /usr/include/c++/15.2.1/bits/refwrap.h
  /usr/include/c++/15.2.1/bits/requires_hosted.h
@@ -146,13 +158,16 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/bits/shared_ptr_base.h
  /usr/include/c++/15.2.1/bits/specfun.h
  /usr/include/c++/15.2.1/bits/std_abs.h
+ /usr/include/c++/15.2.1/bits/stl_algo.h
  /usr/include/c++/15.2.1/bits/stl_algobase.h
  /usr/include/c++/15.2.1/bits/stl_bvector.h
  /usr/include/c++/15.2.1/bits/stl_construct.h
  /usr/include/c++/15.2.1/bits/stl_function.h
+ /usr/include/c++/15.2.1/bits/stl_heap.h
  /usr/include/c++/15.2.1/bits/stl_iterator.h
  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h
+ /usr/include/c++/15.2.1/bits/stl_numeric.h
  /usr/include/c++/15.2.1/bits/stl_pair.h
  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h
@@ -162,6 +177,7 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/bits/streambuf_iterator.h
  /usr/include/c++/15.2.1/bits/string_view.tcc
  /usr/include/c++/15.2.1/bits/stringfwd.h
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h
  /usr/include/c++/15.2.1/bits/unique_ptr.h
  /usr/include/c++/15.2.1/bits/uses_allocator.h
  /usr/include/c++/15.2.1/bits/uses_allocator_args.h
@@ -174,6 +190,7 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/cmath
  /usr/include/c++/15.2.1/concepts
  /usr/include/c++/15.2.1/cstddef
+ /usr/include/c++/15.2.1/cstdint
  /usr/include/c++/15.2.1/cstdio
  /usr/include/c++/15.2.1/cstdlib
  /usr/include/c++/15.2.1/cwchar
@@ -196,11 +213,16 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/limits
  /usr/include/c++/15.2.1/memory
  /usr/include/c++/15.2.1/new
+ /usr/include/c++/15.2.1/numeric
  /usr/include/c++/15.2.1/ostream
  /usr/include/c++/15.2.1/pstl/execution_defs.h
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h
+ /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h
  /usr/include/c++/15.2.1/pstl/pstl_config.h
+ /usr/include/c++/15.2.1/random
  /usr/include/c++/15.2.1/stdexcept
+ /usr/include/c++/15.2.1/stdlib.h
  /usr/include/c++/15.2.1/streambuf
  /usr/include/c++/15.2.1/string
  /usr/include/c++/15.2.1/string_view
@@ -231,14 +253,19 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/endian.h
+ /usr/include/epoxy/common.h
+ /usr/include/epoxy/gl.h
+ /usr/include/epoxy/gl_generated.h
  /usr/include/errno.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/inttypes.h
  /usr/include/linux/errno.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
@@ -249,6 +276,7 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/pthread.h
  /usr/include/sched.h
  /usr/include/stdc-predef.h
+ /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
  /usr/include/sys/cdefs.h
@@ -258,8 +286,16 @@ CMakeFiles/Main.dir/Main.cpp.o
  /usr/include/time.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h
 
 Main
  /usr/lib/Scrt1.o
@@ -274,9 +310,20 @@ Main
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a
  /usr/lib/ld-linux-x86-64.so.2
+ /usr/lib/libGLX.so
+ /usr/lib/libGLdispatch.so.0
+ /usr/lib/libOpenGL.so
+ /usr/lib/libX11.so.6
+ /usr/lib/libXau.so.6
+ /usr/lib/libXdmcp.so.6
  /usr/lib/libc.so.6
  /usr/lib/libc_nonshared.a
+ /usr/lib/libepoxy.so
+ /usr/lib/libglfw.so.3.4
+ /usr/lib/libgomp.so
  /usr/lib/libm.so.6
  /usr/lib/libmvec.so.1
+ /usr/lib/libpthread.a
+ /usr/lib/libxcb.so.1
  /home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles/Main.dir/Main.cpp.o
 

@@ -40,9 +40,14 @@ class sphere : public hittable {
         rec.p = r.at(rec.t);
         vec3 outward_normal = (rec.p - centre) / radius;
         rec.set_face_normal(r,outward_normal);
-        rec.mat = mat;
-        
+        rec.mat = mat.get();
+
         return true;
+    }
+
+    aabb bounding_box() const override {
+        auto rvec = vec3(radius, radius, radius);
+        return aabb(centre - rvec, centre + rvec);
     }
 
     private:

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src -I/home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/backends
 
-CXX_FLAGS = 
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -O3 -march=native -fopenmp
 

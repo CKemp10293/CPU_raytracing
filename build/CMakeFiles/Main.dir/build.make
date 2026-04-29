@@ -96,6 +96,14 @@ Main_EXTERNAL_OBJECTS =
 Main: CMakeFiles/Main.dir/Main.cpp.o
 Main: CMakeFiles/Main.dir/build.make
 Main: CMakeFiles/Main.dir/compiler_depend.ts
+Main: /usr/lib/libepoxy.so
+Main: libimgui.a
+Main: /usr/lib/libgomp.so
+Main: /usr/lib/libpthread.a
+Main: /usr/lib/libGLX.so
+Main: /usr/lib/libOpenGL.so
+Main: /usr/lib/libepoxy.so
+Main: /usr/lib/libglfw.so.3.4
 Main: CMakeFiles/Main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ckemper/Documents/Projects/CPU-raytracer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Main.dir/link.txt --verbose=$(VERBOSE)
