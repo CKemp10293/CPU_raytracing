@@ -22,9 +22,10 @@
 struct RenderState {
     enum class Phase { Idle, Debouncing, Rendering, Done };
 
-    Phase phase        = Phase::Idle;
-    int   current_pass = 0;
-    int   total_passes = 0;
+    Phase phase           = Phase::Idle;
+    int   current_pass    = 0;
+    int   total_passes    = 0;
+    bool  export_requested = false;
 
     void mark_dirty() {
         dirty_time   = std::chrono::steady_clock::now();
@@ -88,7 +89,7 @@ inline bool draw_ui(CameraState& state, RenderState& rs) {
     ImGui::SetNextWindowBgAlpha(0.88f);
 
     ImGui::Begin("Camera Controls", nullptr,
-        ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse);
+        ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove);
 
     // ---- Position --------------------------------------------------------
     ImGui::SeparatorText("Position");
@@ -144,6 +145,14 @@ inline bool draw_ui(CameraState& state, RenderState& rs) {
                 "Done  (%d spp)", rs.total_passes);
             break;
     }
+
+    // ---- Export ----------------------------------------------------------
+    ImGui::SeparatorText("Export");
+    bool can_export = rs.current_pass > 0;
+    if (!can_export) ImGui::BeginDisabled();
+    if (ImGui::Button("Export PPM", {-1.0f, 0.0f}))
+        rs.export_requested = true;
+    if (!can_export) ImGui::EndDisabled();
 
     ImGui::End();
     ImGui::Render();

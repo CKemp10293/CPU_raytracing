@@ -3,8 +3,13 @@
 
 CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/Main.cpp \
   /home/ckemper/Documents/Projects/CPU-raytracer/aabb.h \
+  _deps/imgui-src/backends/imgui_impl_glfw.h \
+  _deps/imgui-src/backends/imgui_impl_opengl3.h \
+  _deps/imgui-src/imconfig.h \
+  _deps/imgui-src/imgui.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/bvh.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/camera.h \
+  /home/ckemper/Documents/Projects/CPU-raytracer/camera_state.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/colour.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/display.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
@@ -14,6 +19,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/sphere.h \
+  /home/ckemper/Documents/Projects/CPU-raytracer/ui.h \
   /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
@@ -28,6 +34,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/asm/posix_types.h \
   /usr/include/asm/posix_types_64.h \
   /usr/include/asm/types.h \
+  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/cpu-set.h \
@@ -118,6 +125,8 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
+  /usr/include/c++/15.2.1/bits/chrono.h \
+  /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
@@ -125,6 +134,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/fstream.tcc \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -144,6 +154,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/bits/ostream.h \
   /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -185,6 +196,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/bits/version.h \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
+  /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
   /usr/include/c++/15.2.1/concepts \
@@ -192,6 +204,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/cstdint \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
+  /usr/include/c++/15.2.1/ctime \
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
@@ -204,6 +217,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/fstream \
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/ios \
   /usr/include/c++/15.2.1/iosfwd \
@@ -220,6 +234,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/random \
+  /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/stdlib.h \
   /usr/include/c++/15.2.1/streambuf \
@@ -243,8 +258,10 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -278,6 +295,8 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -286,6 +305,7 @@ CMakeFiles/Main.dir/Main.cpp.o: /home/ckemper/Documents/Projects/CPU-raytracer/M
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h \
@@ -323,7 +343,8 @@ Main: /usr/lib/Scrt1.o \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libpthread.a \
   /usr/lib/libxcb.so.1 \
-  CMakeFiles/Main.dir/Main.cpp.o
+  CMakeFiles/Main.dir/Main.cpp.o \
+  libimgui.a
 
 
 CMakeFiles/Main.dir/Main.cpp.o:
@@ -378,17 +399,21 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h:
 
 /usr/include/wchar.h:
-
-/usr/include/time.h:
 
 /usr/include/sys/types.h:
 
 /usr/include/sys/cdefs.h:
 
+/usr/include/string.h:
+
 /usr/include/stdlib.h:
+
+libimgui.a:
 
 /usr/lib/libstdc++.so:
 
@@ -412,11 +437,29 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/epoxy/gl_generated.h:
 
-/usr/include/c++/15.2.1/bits/exception_ptr.h:
+/usr/include/epoxy/gl.h:
 
-/usr/lib/libepoxy.so:
+/usr/include/ctype.h:
 
-/usr/include/c++/15.2.1/bits/cxxabi_init_exception.h:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
@@ -440,17 +483,11 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/wordsize.h:
 
-/usr/include/c++/15.2.1/bits/hash_bytes.h:
-
 /usr/include/bits/wctype-wchar.h:
 
 /usr/include/c++/15.2.1/bits/algorithmfwd.h:
 
 /usr/include/bits/timesize.h:
-
-/usr/include/c++/15.2.1/cctype:
-
-/usr/include/c++/15.2.1/backward/binders.h:
 
 /usr/include/bits/types/wint_t.h:
 
@@ -468,25 +505,15 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/types/struct_tm.h:
 
-/usr/include/c++/15.2.1/ext/atomicity.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h:
-
 /usr/include/bits/waitflags.h:
 
 /usr/include/c++/15.2.1/bits/stl_pair.h:
-
-/usr/include/ctype.h:
 
 /usr/lib/libGLX.so:
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/c++/15.2.1/bits/functexcept.h:
-
-/usr/include/c++/15.2.1/streambuf:
+/usr/include/c++/15.2.1/bits/chrono.h:
 
 /usr/include/bits/struct_rwlock.h:
 
@@ -494,7 +521,11 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/include/bits/types/locale_t.h:
+/usr/include/c++/15.2.1/ext/atomicity.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+_deps/imgui-src/imconfig.h:
 
 /usr/include/c++/15.2.1/bits/allocated_ptr.h:
 
@@ -510,55 +541,31 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/types/__fpos64_t.h:
 
-/usr/include/bits/timex.h:
-
 /usr/include/bits/errno.h:
 
 /usr/include/bits/time64.h:
 
 /usr/include/bits/stdlib-float.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/c++/15.2.1/tr1/beta_function.tcc:
+_deps/imgui-src/backends/imgui_impl_opengl3.h:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/ray.h:
 
 /usr/include/bits/stdlib-bsearch.h:
 
-/usr/include/errno.h:
+/home/ckemper/Documents/Projects/CPU-raytracer/sphere.h:
 
-/usr/include/c++/15.2.1/tuple:
+/usr/include/bits/waitstatus.h:
 
-/usr/include/bits/atomic_wide_counter.h:
+/usr/include/bits/wchar.h:
 
-/usr/include/c++/15.2.1/pstl/execution_defs.h:
+/usr/include/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/bits/locale.h:
+/usr/include/bits/setjmp.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+/usr/include/c++/15.2.1/bits/codecvt.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/c++/15.2.1/bits/allocator.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/asm/posix_types.h:
-
-/home/ckemper/Documents/Projects/CPU-raytracer/aabb.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/bits/byteswap.h:
+/usr/include/bits/select.h:
 
 /usr/include/bits/flt-eval-method.h:
 
@@ -567,10 +574,6 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/string:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/c++/15.2.1/tr1/special_function_util.h:
-
-/home/ckemper/Documents/Projects/CPU-raytracer/material.h:
 
 /usr/include/pthread.h:
 
@@ -582,6 +585,28 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/mathcalls-helper-functions.h:
 
+_deps/imgui-src/backends/imgui_impl_glfw.h:
+
+/home/ckemper/Documents/Projects/CPU-raytracer/camera_state.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/errno.h:
+
+/usr/include/c++/15.2.1/tuple:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/15.2.1/pstl/execution_defs.h:
+
+/usr/include/bits/locale.h:
+
 /usr/include/bits/libm-simd-decl-stubs.h:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/Main.cpp:
@@ -590,61 +615,123 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/stdlib.h:
 
+_deps/imgui-src/imgui.h:
+
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
 
-/usr/include/asm-generic/posix_types.h:
+/usr/include/time.h:
 
-/usr/include/c++/15.2.1/tr1/poly_laguerre.tcc:
+/usr/include/c++/15.2.1/bits/fstream.tcc:
 
-/usr/include/bits/floatn.h:
+/home/ckemper/Documents/Projects/CPU-raytracer/aabb.h:
 
-/home/ckemper/Documents/Projects/CPU-raytracer/hittable.h:
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/types/locale_t.h:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/display.h:
 
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/15.2.1/bits/uses_allocator.h:
+
 /usr/include/c++/15.2.1/tr1/hypergeometric.tcc:
+
+/usr/include/c++/15.2.1/bits/ostream.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/home/ckemper/Documents/Projects/CPU-raytracer/hittable_list.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/asm/types.h:
 
-/usr/include/bits/types/__locale_t.h:
+/home/ckemper/Documents/Projects/CPU-raytracer/hittable.h:
 
-/usr/include/c++/15.2.1/bits/uses_allocator.h:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+/usr/include/bits/types/__sigset_t.h:
 
-/usr/include/c++/15.2.1/bits/ostream.h:
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/strings.h:
+
+/usr/include/c++/15.2.1/tr1/poly_laguerre.tcc:
 
 /usr/include/bits/stdint-least.h:
 
-/home/ckemper/Documents/Projects/CPU-raytracer/sphere.h:
+/home/ckemper/Documents/Projects/CPU-raytracer/ui.h:
+
+/usr/include/c++/15.2.1/bits/basic_ios.h:
 
 /usr/include/c++/15.2.1/bit:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/bvh.h:
 
-/usr/include/c++/15.2.1/bits/basic_ios.h:
-
-/home/ckemper/Documents/Projects/CPU-raytracer/camera.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/c++/15.2.1/bits/align.h:
-
-/usr/include/c++/15.2.1/debug/debug.h:
+/usr/include/bits/floatn.h:
 
 /usr/include/c++/15.2.1/type_traits:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/raytrace.h:
 
-/usr/include/bits/waitstatus.h:
+/usr/include/c++/15.2.1/debug/debug.h:
 
-/usr/include/bits/wchar.h:
+/usr/include/c++/15.2.1/bits/align.h:
 
-/usr/include/bits/types/struct___jmp_buf_tag.h:
+/usr/include/c++/15.2.1/bits/functexcept.h:
 
-/usr/include/bits/setjmp.h:
+/usr/include/c++/15.2.1/streambuf:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/15.2.1/cstdlib:
+
+/usr/include/features.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/c++/15.2.1/bits/stl_algobase.h:
+
+/home/ckemper/Documents/Projects/CPU-raytracer/camera.h:
+
+/usr/lib/libc.so:
+
+/usr/include/c++/15.2.1/tr1/beta_function.tcc:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/15.2.1/bits/exception_ptr.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
+
+/usr/include/c++/15.2.1/debug/assertions.h:
+
+/usr/include/c++/15.2.1/new:
+
+/usr/include/assert.h:
+
+/usr/include/c++/15.2.1/cstdio:
+
+/usr/include/c++/15.2.1/bits/allocator.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/c++/15.2.1/fstream:
+
+/usr/include/bits/byteswap.h:
+
+/home/ckemper/Documents/Projects/CPU-raytracer/material.h:
+
+/usr/include/c++/15.2.1/tr1/special_function_util.h:
 
 /usr/lib/libxcb.so.1:
 
@@ -668,9 +755,9 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+/usr/include/c++/15.2.1/bits/parse_numbers.h:
 
-/usr/include/bits/floatn-common.h:
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/wctype.h:
 
@@ -688,14 +775,6 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/mathcalls-narrow.h:
 
-/usr/include/bits/stdio.h:
-
-/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
-
-/usr/include/c++/15.2.1/debug/assertions.h:
-
-/usr/include/c++/15.2.1/new:
-
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
@@ -704,7 +783,9 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/bits/select.h:
+/usr/lib/libepoxy.so:
+
+/usr/include/c++/15.2.1/bits/cxxabi_init_exception.h:
 
 /usr/lib/crtn.o:
 
@@ -714,23 +795,17 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/15.2.1/bits/hash_bytes.h:
 
-/usr/include/features.h:
+/usr/include/c++/15.2.1/backward/binders.h:
 
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/c++/15.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/15.2.1/cstdlib:
+/usr/include/c++/15.2.1/cctype:
 
 /usr/include/c++/15.2.1/bits/ios_base.h:
 
-/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/15.2.1/chrono:
 
-/usr/include/c++/15.2.1/cstdio:
+/usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/alloca.h:
 
@@ -772,17 +847,15 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/new_allocator.h:
 
-/usr/include/asm/errno.h:
-
 /usr/include/bits/stdint-uintn.h:
+
+/usr/include/asm/errno.h:
 
 /usr/include/c++/15.2.1/system_error:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
 
 /usr/include/c++/15.2.1/bits/ostream.tcc:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/include/c++/15.2.1/bits/ostream_insert.h:
 
@@ -793,6 +866,12 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/bits/random.h:
 
 /usr/include/c++/15.2.1/bits/random.tcc:
+
+/usr/include/epoxy/common.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/15.2.1/bits/range_access.h:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
 
@@ -828,17 +907,15 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/asm-generic/bitsperlong.h:
 
-/usr/include/asm-generic/types.h:
+/usr/include/c++/15.2.1/bits/stl_heap.h:
 
 /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h:
 
-/usr/include/c++/15.2.1/bits/stl_heap.h:
+/usr/include/asm-generic/types.h:
 
 /usr/include/c++/15.2.1/exception:
 
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
-
-/usr/include/epoxy/gl.h:
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
 
@@ -870,6 +947,12 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/clocale:
 
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/15.2.1/cmath:
+
 /usr/include/c++/15.2.1/concepts:
 
 /usr/lib/libgcc_s.so:
@@ -877,6 +960,10 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/cstddef:
 
 /usr/include/c++/15.2.1/cstdint:
+
+/usr/include/bits/timex.h:
+
+/usr/include/c++/15.2.1/ctime:
 
 /usr/include/c++/15.2.1/ext/aligned_buffer.h:
 
@@ -914,11 +1001,15 @@ CMakeFiles/Main.dir/Main.cpp.o:
 
 /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h:
 
-/usr/include/bits/types/clockid_t.h:
-
 /usr/include/bits/stdint-intn.h:
 
+/usr/include/bits/types/clockid_t.h:
+
 /usr/include/c++/15.2.1/random:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/15.2.1/ratio:
 
 /usr/include/c++/15.2.1/stdexcept:
 
@@ -927,12 +1018,6 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/vector:
 
 /usr/include/c++/15.2.1/string_view:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/15.2.1/cmath:
-
-/usr/include/endian.h:
 
 /usr/include/c++/15.2.1/tr1/gamma.tcc:
 
@@ -947,25 +1032,3 @@ CMakeFiles/Main.dir/Main.cpp.o:
 /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/15.2.1/typeinfo:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/15.2.1/bits/range_access.h:
-
-/usr/include/epoxy/common.h:

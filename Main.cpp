@@ -1,5 +1,8 @@
 #include "raytrace.h"
 
+#include <ctime>
+#include <fstream>
+
 #include "bvh.h"
 #include "camera.h"
 #include "camera_state.h"
@@ -8,6 +11,30 @@
 #include "material.h"
 #include "sphere.h"
 #include "ui.h"
+
+static void export_ppm(const std::vector<float>& staging, int width, int height) {
+    std::time_t t = std::time(nullptr);
+    char filename[32];
+    std::strftime(filename, sizeof(filename), "render_%Y%m%d_%H%M%S.ppm", std::localtime(&t));
+
+    std::ofstream file(filename);
+    if (!file.is_open()) return;
+
+    file << "P3\n" << width << ' ' << height << "\n255\n";
+    for (int i = 0; i < width * height; i++) {
+        // staging holds linear-light values; apply sqrt gamma-2.0 correction
+        float r = staging[i*3+0];
+        float g = staging[i*3+1];
+        float b = staging[i*3+2];
+        r = (r > 0.0f) ? std::sqrt(r) : 0.0f;
+        g = (g > 0.0f) ? std::sqrt(g) : 0.0f;
+        b = (b > 0.0f) ? std::sqrt(b) : 0.0f;
+        auto to_byte = [](float v) {
+            return static_cast<int>(256.0f * std::min(std::max(v, 0.0f), 0.999f));
+        };
+        file << to_byte(r) << ' ' << to_byte(g) << ' ' << to_byte(b) << '\n';
+    }
+}
 
 int main() {
     // ---- Scene setup (unchanged) ----------------------------------------
@@ -121,6 +148,11 @@ int main() {
 
         if (draw_ui(state, rs))
             rs.mark_dirty();   // any slider/button change → debounce timer
+
+        if (rs.export_requested) {
+            rs.export_requested = false;
+            export_ppm(staging, cam.image_width, cam.image_height);
+        }
 
         display.swap_and_poll();
     }

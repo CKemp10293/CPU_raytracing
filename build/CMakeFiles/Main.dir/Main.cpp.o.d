@@ -206,6 +206,11 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /home/ckemper/Documents/Projects/CPU-raytracer/interval.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/vec3.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/ray.h \
+ /usr/include/c++/15.2.1/ctime /usr/include/c++/15.2.1/fstream \
+ /usr/include/c++/15.2.1/bits/codecvt.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.2.1/bits/fstream.tcc \
  /home/ckemper/Documents/Projects/CPU-raytracer/bvh.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/aabb.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/hittable.h \
@@ -232,5 +237,5 @@ CMakeFiles/Main.dir/Main.cpp.o: \
  /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/backends/imgui_impl_glfw.h \
  /home/ckemper/Documents/Projects/CPU-raytracer/build/_deps/imgui-src/backends/imgui_impl_opengl3.h \
  /usr/include/c++/15.2.1/chrono /usr/include/c++/15.2.1/bits/chrono.h \
- /usr/include/c++/15.2.1/ratio /usr/include/c++/15.2.1/ctime \
+ /usr/include/c++/15.2.1/ratio \
  /usr/include/c++/15.2.1/bits/parse_numbers.h
